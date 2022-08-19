@@ -40,4 +40,12 @@ public class LuckyEmployeeService {
         hm.put(REnum.result, luckyEmployee);
         return new ResponseEntity(hm, HttpStatus.OK);
     }
+
+    public ResponseEntity list() {
+        Map<REnum, Object> hm = new HashMap<>();
+        List<LuckyEmployee> employeesList = luckyEmployeeRepository.findAll();
+        hm.put(REnum.status, true);
+        hm.put(REnum.result, employeesList);
+        return new ResponseEntity<>(hm, HttpStatus.OK);
+    }
 }

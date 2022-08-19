@@ -16,7 +16,12 @@ public class LuckyEmployeeController {
     }
 
     @GetMapping("/winner")
-    public ResponseEntity list(){
+    public ResponseEntity winner(){
         return luckyEmployeeService.getWinner();
+    }
+
+    @GetMapping("/list")
+    public ResponseEntity list(){
+        return luckyEmployeeService.list();
     }
 }
