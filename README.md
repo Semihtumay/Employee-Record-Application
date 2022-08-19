@@ -7,6 +7,8 @@
 - A service method that returns a random employee for a monthly prize draw every month at a specific time and saves it to the database.
 
 - Postman has been used in the documentation of this project and has been adapted to OpenApi standards.
+
+- Includes integration test and unit test
  
 ## Project Images
 
